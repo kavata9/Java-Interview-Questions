@@ -19,10 +19,48 @@ Here @ symbol represents that this is an annotation and the Override is the name
 
 * What is the difference betwee '==' and equals() when comparing Strings?
 * What are the 8 primitive types in Java?
+byte
+short
+int
+long
+char
+float
+double
+boolean
+
 * What is the difference between primitives and wrapper classes and when can we use each?
+
+Wrapper class is used to encapsulate other primitive class in Java. It , as the name suggests, its object wraps the primitive data. For example it's wraps int to Integer and double to Double and so on. The term "wrapper class" in Java refers to the classes that represent the primitive types in Object form.
+
 * Define Encapsulation and outline its benefits.
+Encapsulation in Java is a mechanism of wrapping the data (variables) and code acting on the data (methods) together as a single unit. In encapsulation, the variables of a class will be hidden from other classes, and can be accessed only through the methods of their current class. Therefore, it is also known as data hiding.
+
+To achieve encapsulation in Java −
+
+Declare the variables of a class as private.
+
+Provide public setter and getter methods to modify and view the variables values.
+
+It’s because encapsulation has a number of advantages that increase the reusability, flexibility and maintainability of the code.
+Flexibility: It’s more flexible and easy to change the encapsulated code with new requirements. For example, if the requirement for setting the age of a person changes, we can easily update the logic in the setter method setAge().  
+Reusability: Encapsulated code can be reused throughout the application or across multiple applications. For example, the Person class can be reused whenever such type of object is required.  
+Maintainability: Application ode is encapsulated in separate units (classes, interfaces, methods, setters, getters, etc) so it’s easy to change or update a part of the application without affecting other parts, which reduces the time of maintenance.
+
 * Do objects get passed by reference or value in Java? Elaborate on that.
 * Explain the four OOP principles.
+a)Encapsulation
+Encapsulation is the idea that the attributes of an entity are enclosed in that entity. This gives context to attributes. This also allows the programmer to restrict access to those attributes so that those attributes are modified and/or used only in ways that the programmer intends to use them.
+b)Inheritance
+Inheritance is the idea that an entity can inherit attributes from another entity. It allows the programmer to create similar entities without needing to redefine similar attributes over and over.
+c)Polymorphism
+Polymorphism means “having many forms” which honestly doesn’t really help too much as a definition.  I like to call it a way to have the same method, only different. There are two ways to do this:
+1.Overloading: The method name stays the same, but the parameters, the return type and the number of parameters can all change.
+
+2.Overriding: This is when a subclass method has the same name, parameters and return type as a method in a superclass but has a different implementation.
+
+d)Abstraction
+Abstraction is the process of hiding all but the relevant information about a thing to make things less complex and more efficient for the user. For example, we don’t need to know how a clock works in order to use it to tell time. Abstraction lets you focus on what the thing does instead of how it does it.
+
 * What is the difference between Abstract classes and Interfaces?
 * Is it possible to implement multiple inheritance in Java?
 * What is serialization? How do you implement it?
