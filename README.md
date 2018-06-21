@@ -62,7 +62,20 @@ d)Abstraction
 Abstraction is the process of hiding all but the relevant information about a thing to make things less complex and more efficient for the user. For example, we don’t need to know how a clock works in order to use it to tell time. Abstraction lets you focus on what the thing does instead of how it does it.
 
 * What is the difference between Abstract classes and Interfaces?
+An interface can contain only method declarations.
+An abstract class can contain both method declarations (abstract methods) and method implementations (concrete methods).
+
+
+ Abstract Class	 Interface
+1	 An abstract class can extend only one class or one abstract class at a time while	 An interface can extend any number of interfaces at a time
+2	  An abstract class can extend another concrete (regular) class or abstract class	while An interface can only extend another interface
+3	 An abstract class can have both abstract and concrete methods while An interface can have only abstract methods
+4	 In abstract class keyword “abstract” is mandatory to declare a method as an abstract	 In an interface keyword “abstract” is optional to declare a method as an abstract
+5	 An abstract class can have protected and public abstract methods	 An interface can have only have public abstract methods
+6	 An abstract class can have static, final or static final variable with any access specifier while interface can only have public static final (constant) variable
+
 * Is it possible to implement multiple inheritance in Java?
+Java has no multiple inheritance, so a class can not extend multiple classes. Although you can implement multiple interfaces. Also with Java 8 you can have default implementation in interfaces, so which makes this work-around very similar to multiple inheritance. ... But java support multiple inheritance of types.
 * What is serialization? How do you implement it?
 * What are anonymous classes?
 * What does it means to say that a String is immutable?
