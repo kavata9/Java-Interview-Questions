@@ -103,5 +103,27 @@ Java has no multiple inheritance, so a class can not extend multiple classes. Al
 * What is an Internet Protocol?
 ## Android
 * What are the four main components of an Android Application?
+1.Activities
+
+They dictate the UI and handle the user interaction to the smart phone screen.
+
+2	
+Services
+
+They handle background processing associated with an application.
+
+3	
+Broadcast Receivers
+
+They handle communication between Android OS and applications.
+
+4	
+Content Providers
+
+They handle data and database management issues.
 * What is the purpose of a package name?
+This is of importance as it helps to uniquely identify ones app from others in google playstore.
+
+
 * What is the purpose of Android Virtual Device?
+This is used as a simmulator for an actual phone or device and it is for the purpose of testing.
