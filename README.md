@@ -47,6 +47,8 @@ Reusability: Encapsulated code can be reused throughout the application or acros
 Maintainability: Application ode is encapsulated in separate units (classes, interfaces, methods, setters, getters, etc) so it’s easy to change or update a part of the application without affecting other parts, which reduces the time of maintenance.
 
 * Do objects get passed by reference or value in Java? Elaborate on that.
+ Java does manipulate objects by reference, and all object variables are references. However, Java doesn't pass method arguments by reference; it passes them by value.
+ 
 * Explain the four OOP principles.
 a)Encapsulation
 Encapsulation is the idea that the attributes of an entity are enclosed in that entity. This gives context to attributes. This also allows the programmer to restrict access to those attributes so that those attributes are modified and/or used only in ways that the programmer intends to use them.
@@ -77,17 +79,51 @@ An abstract class can contain both method declarations (abstract methods) and me
 * Is it possible to implement multiple inheritance in Java?
 Java has no multiple inheritance, so a class can not extend multiple classes. Although you can implement multiple interfaces. Also with Java 8 you can have default implementation in interfaces, so which makes this work-around very similar to multiple inheritance. ... But java support multiple inheritance of types.
 * What is serialization? How do you implement it?
+To serialize an object means to convert its state to a byte stream so that the byte stream can be reverted back into a copy of the object. A Java object is serializable if its class or any of its superclasses implements either the java.io.Serializable interface or its subinterface, java.io.Externalizable.
 * What are anonymous classes?
+
+Anonymous Inner Class in Java. It is an inner class without a name and for which only a single object is created. An anonymous inner class can be useful when making an instance of an object with certain “extras” such as overloading methods of a class or interface, without having to actually subclass a class.
+Anonymous inner classes are useful in writing implementation classes for listener interfaces in graphics programming.
+
+Anonymous inner class are mainly created in two ways:
+Class (may be abstract or concrete)
+Interface
+
 * What does it means to say that a String is immutable?
+String objects are immutable in Java because they provide no methods that modify the state of an existing String object. They only provide methods that create new String objects based on the content of existing ones.
+
 * What is the difference between method overloading and method overriding?
+
+Overloading occurs when two or more methods in one class have the same method name but different parameters. Overriding means having two methods with the same method name and parameters (i.e., method signature). One of the methods is in the parent class and the other is in the child class.
+
 * What are the access modifiers you know? What does each one do?
+
+Java access modifiers are used to provide access control in Java.
+Default: Accessible to the classes in the same package only. ...
+Public. Can be accessed from anywhere. ( ...
+Private. Accessible only inside the same class. ...
+Protected. Accessible only to the classes in the same package and to the subclasses.
+
+
 * Do objects get passed by reference or value in Java? Elaborate on that.
 * What the difference between local, instance and class variables?
 * What is Dependency Injection?
+
+n software engineering, dependency injection is a technique whereby one object (or static method) supplies the dependencies of another object. A dependency is an object that can be used (a service). An injection is the passing of a dependency to a dependent object (a client) that would use it.
+
 * What does the static word mean in Java? Can a static method be overridden in Java?
+The static keyword in Java means that the variable or function is shared between all instances of that class as it belongs to the type, not the actual objects themselves. So if you have a variable: private static int i = 0; and you increment it ( i++ ) in one instance, the change will be reflected in all instances.Jan 6, 2009
+The answer is ‘Yes’. We can have two ore more static methods with same name, but differences in input parameters. 
+
 * When is a static block run?
+ Java supports a special block, called static block (also called static clause) which can be used for static initializations of a class. This code inside static block is executed only once: the first time you make an object of that class or the first time you access a static member of that class (even if you never make an object of that class). For example, check output of following Java program.
+ 
 * What is reflection?
+In object-oriented programming languages such as Java, reflection allows inspection of classes, interfaces, fields and methods at runtime without knowing the names of the interfaces, fields, methods at compile time. It also allows instantiation of new objects and invocation of methods.
+
 * How does the try{} catch{} finally{}
+The try block contains set of statements where an exception can occur. A try block is always followed by a catch block, which handles the exception that occurs in associated try block. A try block must be followed by catch blocks or finally block or both.
+
 * What is garbage collection? How does it work?
 * What is memory leak and how does Java handle it?
 * What does the keyword synchronized mean?
