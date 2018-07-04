@@ -122,12 +122,18 @@ The answer is ‘Yes’. We can have two ore more static methods with same name,
 In object-oriented programming languages such as Java, reflection allows inspection of classes, interfaces, fields and methods at runtime without knowing the names of the interfaces, fields, methods at compile time. It also allows instantiation of new objects and invocation of methods.
 
 * How does the try{} catch{} finally{}
-The try block contains set of statements where an exception can occur. A try block is always followed by a catch block, which handles the exception that occurs in associated try block. A try block must be followed by catch blocks or finally block or both.
-
 * What is garbage collection? How does it work?
+The garbage collector is a program which runs on the Java Virtual Machine which gets rid of objects which are not being used by a Java application anymore. It is a form of automatic memory management. ... This means that in every iteration, a little bit of memory is being allocated to make a String object.
+All objects are allocated on the heap area managed by the JVM. ... As long as an object is being referenced, the JVM considers it alive. Once an object is no longer referenced and therefore is not reachable by the application code, the garbage collector removes it and reclaims the unused memory.
+
 * What is memory leak and how does Java handle it?
+
+memory leak in Java is a situation where some objects are not used by the application any more, but GC fails to recognize them as unused.
+
 * What does the keyword synchronized mean?
+synchronized is a Java keyword. It means that two threads cannot execute the method at the same time and the JVM takes care of enforcing that
 * Explain Generics in Java
+They were designed to extend Java's type system to allow “a type or method to operate on objects of various types while providing compile-time type safety”.
 
 
 ## Web Development
